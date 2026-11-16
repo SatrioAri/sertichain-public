@@ -1,0 +1,50 @@
+# ===== Secrets (JANGAN PERNAH di-commit) =====
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ===== Node.js =====
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.pnpm-store/
+
+# ===== Next.js (frontend) =====
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+.vercel/
+
+# ===== Hardhat (contracts) =====
+artifacts/
+!contracts/ignition/deployments/*/artifacts/
+cache/
+typechain/
+typechain-types/
+coverage/
+coverage.json
+ignition/deployments/chain-31337/
+
+# ===== Supabase CLI (jika dipakai) =====
+supabase/.temp/
+supabase/.branches/
+
+# ===== Build & log =====
+dist/
+build/
+logs/
+*.log
+
+# ===== OS & editor =====
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/*
+!.vscode/extensions.json
+.idea/
